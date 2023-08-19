@@ -21,7 +21,7 @@ public class MonedaController {
 		return monedaService.findAll();
 	};
 	
-	@GetMapping("/listar/{id}")
+	@GetMapping("/listar/{moneda}")
 	public Moneda listarPorCodigo(@PathVariable String moneda){
 		return monedaService.findById(moneda);
 	};

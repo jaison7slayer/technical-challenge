@@ -8,28 +8,28 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "moneda")
+@Table(name = "tipo_cambio")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Moneda implements Serializable {
-	
+public class TipoCambio implements Serializable {
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -482883736075445094L;
-
+	private static final long serialVersionUID = -7063087416410792266L;
+	
 	@Id
-	private String codigo;
+	private Long id;
 	
-	private String pais;
-	private String simbolo;
-	
+	private String monedaOrigen;
+	private String monedaDestino;
+	private String tipoFactor;
+	private Double factorCambio;
 	private String createUser;
-
+	
 }
