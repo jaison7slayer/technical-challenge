@@ -12,6 +12,6 @@ public interface TipoCambioService {
 	//public Double obtenerTipoCambio(String monedaOrigen, String monedaDestino, String tipoFactor);
 	public Double calcularTipoCambio(String monedaOrigen, String monedaDestino, String tipoFactor, Double monto);
 	public TipoCambioWebDto calcularConversion(Double monto, String monedaOrigen, String monedaDestino, String tipoFactor);
-	
+	public void guardarTipoCambio(TipoCambio tipoCambio);	
 
 }

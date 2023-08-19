@@ -43,4 +43,11 @@ public class TipoCambioServiceImpl implements TipoCambioService {
 		return tipoCambioDao.obtenerTipoCambioFormato(monto, monedaOrigen, monedaDestino, tipoFactor);
 	}
 
+	@Override
+	public void guardarTipoCambio(TipoCambio tipoCambio) {
+		// TODO Auto-generated method stub
+		tipoCambioDao.save(tipoCambio);
+		
+	}
+
 }
